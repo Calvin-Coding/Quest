@@ -2,7 +2,8 @@ package quest_package;
 
 import java.util.HashMap;
 
-public class Vocab {
+public class Vocab extends Gui {
+	private static final long serialVersionUID = 1L;
 
 	public Vocab(String main_input) {
 
@@ -27,13 +28,19 @@ public class Vocab {
 		dir.put("wrong", "Sorry, I have a limeted words and only know them in one context.");
 		dir.put("great", "Thanks! I like you too!");
 		dir.put("bye", "Bye! See you later!!");
+		dir.put("happy", "I'm glad to hear that!");
 		dir.put("go", "Okay, C Ya!");
+		dir.put("board", "Why don't you play a game?");
+		dir.put("java", "I'm pure Java. The language of course.");
+		dir.put("hurt", "Ouch, sorry to hear that.");
+		dir.put("talk", "Yes, you can talk to me.");
 
 		for (String input : array) {
 			String inputLower = input.toLowerCase();
 			forloops: for (String ikeys : dir.keySet()) {
 				if (ikeys.equals(inputLower)) {
 					System.out.println(dir.get(inputLower));
+					// addTextGui(dir.get(inputLower));
 					break forloops;
 				} else {
 

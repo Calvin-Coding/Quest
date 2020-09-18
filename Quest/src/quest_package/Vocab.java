@@ -2,8 +2,7 @@ package quest_package;
 
 import java.util.HashMap;
 
-public class Vocab extends Gui {
-	private static final long serialVersionUID = 1L;
+public class Vocab {
 
 	public Vocab(String main_input) {
 
@@ -19,7 +18,7 @@ public class Vocab extends Gui {
 		dir.put("angry", "Calm down");
 		dir.put("think", "I sadly cannot think. I am just a program that find words I know");
 		dir.put("hi", "Hello my friend!!!");
-		dir.put("code", "I cannot code, but I have about 14 lines of vocab.");
+		dir.put("code", "I cannot code, but I have about 26 lines of vocab.");
 		dir.put("mean", "I wish that could change.");
 		dir.put("bullying", "Mean people do not deserve life.");
 		dir.put("worried", "I sure if will turn out fine.");
@@ -34,13 +33,17 @@ public class Vocab extends Gui {
 		dir.put("java", "I'm pure Java. The language of course.");
 		dir.put("hurt", "Ouch, sorry to hear that.");
 		dir.put("talk", "Yes, you can talk to me.");
+		dir.put("down", "I'm terribly sorry to hear that.");
+		dir.put("bugs", "They sound either annoying or crawly.");
+		dir.put("corona", "I know it sucks!");
+		dir.put("bad", "I'm sorry about that. :(");
+		dir.put("friend", "Thanks if your talking about me. :)");
 
 		for (String input : array) {
 			String inputLower = input.toLowerCase();
 			forloops: for (String ikeys : dir.keySet()) {
 				if (ikeys.equals(inputLower)) {
 					System.out.println(dir.get(inputLower));
-					// addTextGui(dir.get(inputLower));
 					break forloops;
 				} else {
 
